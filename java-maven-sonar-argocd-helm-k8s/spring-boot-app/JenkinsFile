@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'amaanullahhakeem/end-end-jenkins-pipeline:latest'
-      args '-u root'
+      args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
   stages {
@@ -15,8 +15,7 @@ pipeline {
     stage('Build and Test') {
       steps {
         // build the project and create a JAR file
-        sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app'
-            mvn clean package
+        sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
       }
     }
     stage('Static Code Analysis') {
