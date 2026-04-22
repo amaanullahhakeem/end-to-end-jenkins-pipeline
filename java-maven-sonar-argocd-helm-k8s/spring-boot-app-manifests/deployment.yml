@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: amaanullahhakeem/end-end-jenkins-pipeline:replaceImageTag
+        image: amaanullahhakeem/end-end-jenkins-pipeline:6
         ports:
         - containerPort: 8080
