@@ -64,10 +64,5 @@ docker push <docker-username>/app:<build-number>
 - Production-style pipeline structure
 # Pipeline Execution
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8ec7d791-ccb3-4caf-ab3d-1072eb9b73d8" />
 
-🧠 What I Learned
-Writing Jenkins Declarative Pipelines
-Integrating SonarQube with CI/CD
-Handling Docker build and push in pipelines
-Automating deployment using GitOps principles
-Debugging real-world DevOps issues
