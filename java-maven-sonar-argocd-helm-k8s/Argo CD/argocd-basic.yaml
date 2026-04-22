@@ -3,7 +3,7 @@ kind: ArgoCD
 metadata:
   name: example-argocd
   labels:
-    example: basic
+    example: spring-boot-app
 spec:
   server:
     service:
