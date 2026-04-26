@@ -5,6 +5,18 @@ It automates the process of building, analyzing, containerizing, and deploying a
 
 ![Screenshot 2023-03-28 at 9 38 09 PM](https://user-images.githubusercontent.com/43399466/228301952-abc02ca2-9942-4a67-8293-f76647b6f9d8.png)
 
+# Project Dec.
+“I built an end-to-end CI/CD pipeline to automate the build, quality check, containerization, and deployment of a Spring Boot application.
+
+The process starts when code is pushed to GitHub, which triggers a Jenkins pipeline. Jenkins pulls the code and uses Maven to build the application.
+
+Then SonarQube performs static code analysis to ensure code quality. After that, I use Docker to containerize the application and push the image to Docker Hub with a version tag based on the build number.
+
+For deployment, I used ArgoCD, which follows a GitOps approach. It monitors the Kubernetes manifests stored in Git and automatically syncs changes to the cluster.
+
+Finally, the application is deployed on Kubernetes using Deployment and Service resources.
+
+This pipeline automates the entire workflow and helped reduce deployment time by around 60% while eliminating manual intervention.”
 
 # Tech Stack
 
