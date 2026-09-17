@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: spring-boot-app
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/amaanullahhakeem/end-to-end-jenkins-pipeline.git
+    targetRevision: main
+    path: java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
