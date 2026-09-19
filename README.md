@@ -548,23 +548,19 @@ Kubernetes Service
 
 ## SonarQube
 
-Add the SonarQube dashboard screenshot here:
+SonarQube dashboard screenshot here:
 
-```text
-images/sonarqube.png
-```
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c03d5077-f894-47b7-b6b3-b63ab681198b" />
+
 
 ![SonarQube Dashboard](images/sonarqube.png)
 
----
 
 ## Jenkins Pipeline
 
-Add the successful Jenkins pipeline screenshot here:
+Jenkins pipeline screenshot here:
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a0f0f1e2-daaf-4958-adeb-d1b4a9d515d0" />
 
-```text
-images/jenkins-pipeline.png
-```
 
 ![Jenkins Pipeline](images/jenkins-pipeline.png)
 
@@ -572,15 +568,17 @@ images/jenkins-pipeline.png
 
 ## Grafana Kubernetes Monitoring
 
-Add the Grafana Kubernetes compute/resource dashboard here:
+Grafana Kubernetes compute/resource dashboard here:
 
-```text
-images/grafana-dashboard.png
-```
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/124e544c-ff25-4785-97a4-37ada9f684d5" />
+
 
 ![Grafana Kubernetes Dashboard](images/grafana-dashboard.png)
 
 ---
+
+## ArgoCD Application
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ee9cdeac-5904-470b-bbee-06486a4b9159" />
 
 # 🎯 Key DevOps Practices Demonstrated
 
@@ -611,13 +609,13 @@ Since the DevOps tools are not publicly exposed, port forwarding can be used for
 ### Argo CD
 
 ```bash
-kubectl port-forward svc/argocd-server -n argocd 8080:443
+kubectl port-forward --address 0.0.0.0 svc/argocd-server -n argocd 8082:80
 ```
 
 ### Grafana
 
 ```bash
-kubectl port-forward svc/kube-prometheus-stack-grafana \
+kubectl port-forward --address 0.0.0.0 svc/kube-prometheus-stack-grafana \
   -n monitoring 3000:80
 ```
 
@@ -667,7 +665,7 @@ The infrastructure is provisioned using Terraform, the application is deployed o
 ---
 
 # 👨‍💻 Author
-
+**Aman Ullah**
 **DevOps Project**
 
 GitHub Repository:
