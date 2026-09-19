@@ -1,5 +1,8 @@
 # End-to-End DevOps CI/CD Pipeline with AWS EKS
 
+## Short Description: 
+End-to-End DevOps CI/CD project for deploying a Spring Boot application on AWS EKS. The project uses Jenkins, Maven, SonarQube, Docker, Amazon ECR, Terraform, Argo CD, Prometheus, and Grafana. The EKS infrastructure runs across 2 Availability Zones with private worker nodes, while DevOps tools are accessed securely through port forwarding.
+
 ## 📌 Project Overview
 
 This project demonstrates an end-to-end DevOps CI/CD pipeline for deploying a **Spring Boot application on AWS EKS**.
