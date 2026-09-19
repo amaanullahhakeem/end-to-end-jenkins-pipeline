@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: 743887468885.dkr.ecr.ap-south-1.amazonaws.com/production-eks-dev/spring-boot-app:5
+        image: 743887468885.dkr.ecr.ap-south-1.amazonaws.com/production-eks-dev/spring-boot-app:6
 
 
         ports:
